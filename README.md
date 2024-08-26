@@ -104,5 +104,34 @@ As consultas SQL realizadas diretamente no MySQL foram cruciais para:
 
 # Etapas do Python no projeto:
 
-• Resolvi fazer este tópico para melhor entendimento do que fiz nos códigos.
+• Resolvi fazer este tópico para melhor entendimento dos códigos.
 
+### 1 - Tradução:
+
+Achei necessário fazer esse processo pois permitia melhor compreensão daquele que está visualizando o código. Desse modo, usei a função "replace" para substituir as palavras nas linhas e a "rename" foi responsável por traduzir palavras das colunas.
+
+<img align="center"  height="450" width="800" src="https://github.com/user-attachments/assets/e2c4d3bd-9f4d-4ee2-96a0-78033467aa36">
+
+### Dados traduzidos :
+
+<img align="center"  height="350" width="1000" src="https://github.com/user-attachments/assets/3f6845be-b974-4e93-92ce-92e7eddd68a1">
+
+### 2 - Verificando se há valores NaN ou duplicados :
+
+<img align="center"  height="350" width="500" src="https://github.com/user-attachments/assets/51e2a75e-9c4c-4ddd-923c-f65372e3c48d">
+
+### 3 - Removendo mais colunas :
+
+Decidi retirar pois pode dificultar o treinamento de nosso modelo.
+
+<img align="center"  height="350" width="1000" src="https://github.com/user-attachments/assets/f0d48278-d73f-4a4c-a5ef-c58c67cc579d">
+
+### 4 - Utilizando a função get dummies :
+
+Neste ponto, encontramos uma etapa crucial em nossa análise, a transformação de variáveis categóricas em numéricas, sim(1) e não (0).
+
+<img align="center"  height="350" width="1000" src="https://github.com/user-attachments/assets/23bfa52d-5a96-49b4-91cf-cd473cd523f3">
+
+### 5 - Separação de membros ativos e inativos:
+
+É um ponto importante pois vamos prever quais membros ativos tem o potêncial de saída no final, por isso a separamos.
